@@ -1,0 +1,85 @@
+## Máquina 1: Sensores
+
+### Preparación
+1. **Instalar Python y pyzmq**:
+    ```sh
+    pip install pyzmq
+    ```
+
+### Ejecución de los Sensores
+1. **Sensor de Temperatura**:
+    - Crear un archivo llamado `sensor_temperatura.py`.
+    - Pegar el código del sensor de temperatura.
+    - Ejecutar el archivo:
+      ```sh
+      python sensor_temperatura.py
+      ```
+
+2. **Sensor de Humo**:
+    - Crear un archivo llamado `sensor_humo.py`.
+    - Pegar el código del sensor de humo.
+    - Ejecutar el archivo:
+      ```sh
+      python sensor_humo.py
+      ```
+
+3. **Sensor de Humedad**:
+    - Crear un archivo llamado `sensor_humedad.py`.
+    - Pegar el código del sensor de humedad.
+    - Ejecutar el archivo:
+      ```sh
+      python sensor_humedad.py
+      ```
+
+## Máquina 2: Proxy Principal y Proxy de Respaldo
+
+### Preparación
+1. **Instalar Python y pyzmq**:
+    ```sh
+    pip install pyzmq
+    ```
+
+### Ejecución del Proxy Principal
+1. **Crear un archivo llamado `proxy_principal.py`**.
+2. **Pegar el código del proxy principal**.
+3. **Ejecutar el archivo**:
+    ```sh
+    python proxy_principal.py
+    ```
+
+### Ejecución del Proxy de Respaldo
+1. **Crear un archivo llamado `proxy_respaldo.py`**.
+2. **Pegar el código del proxy de respaldo**.
+3. **Ejecutar el archivo**:
+    ```sh
+    python proxy_respaldo.py
+    ```
+
+## Máquina 3: Capa Cloud y Actuador
+
+### Preparación
+1. **Instalar Python y pyzmq**:
+    ```sh
+    pip install pyzmq
+    ```
+
+### Ejecución de la Capa Cloud con Health Check y Failover
+1. **Crear un archivo llamado `cloud_layer.py`**.
+2. **Pegar el código de la capa cloud con health check y failover**.
+3. **Ejecutar el archivo**:
+    ```sh
+    python cloud_layer.py
+    ```
+
+### Ejecución del Actuador
+1. **Crear un archivo llamado `actuador.py`**.
+2. **Pegar el código del actuador**.
+3. **Ejecutar el archivo**:
+    ```sh
+    python actuador.py
+    ```
+
+### Notas Finales
+- **Verifica la Conectividad**: Asegúrate de que todas las máquinas pueden comunicarse entre sí a través de las direcciones IP y puertos configurados.
+- **Firewall y Seguridad**: Configura las reglas de firewall para permitir el tráfico en los puertos especificados.
+- **Permisos de Red**: Asegúrate de tener los permisos necesarios para ejecutar los scripts y enlazar los puertos en cada máquina.
